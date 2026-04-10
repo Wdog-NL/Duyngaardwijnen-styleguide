@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duyngaard Wijnen - Brand Style Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-green: #228B22;
+            --dark-green: #1a6b1a;
+            --light-green: #2aa52a;
+            --black: #000000;
+            --white: #ffffff;
+            --gray-light: #f5f5f5;
+            --gray-dark: #333333;
+            --gray-text: #666666;
+            --accent-gold: #B8860B;
+            --sand: #D4A574;
+            --clay: #A0826D;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--gray-dark);
+            background-color: var(--white);
+        }
+
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: var(--primary-green);
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: bold;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.8;
+        }
+
+        /* Header */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-green) 0%, var(--dark-green) 100%);
+            color: var(--white);
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            opacity: 0.9;
+            margin-bottom: 1rem;
+        }
+
+        .hero .tagline {
+            font-size: 1.8rem;
+            font-style: italic;
+            opacity: 0.95;
+            margin-top: 2rem;
+        }
+
+        .hero .date {
+            font-size: 1rem;
+            opacity: 0.7;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Sections */
+        section {
+            padding: 4rem 0;
+            border-bottom: 1px solid var(--gray-light);
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        h1 {
+            color: var(--primary-green);
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid var(--primary-green);
+            padding-bottom: 0.5rem;
+        }
+
+        h2 {
+            color: var(--primary-green);
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            color: var(--dark-green);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--gray-text);
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        /* Lists */
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            color: var(--gray-text);
+        }
+
+        /* Images */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .image-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: linear-gradient(to bottom, var(--gray-light), #fafafa);
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-green);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .image-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(34, 139, 34, 0.2);
+        }
+
+        .image-item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+
+        .image-item h3 {
+            color: var(--primary-green);
+            margin-bottom: 0.5rem;
+        }
+
+        .image-item .wine-type {
+            display: inline-block;
+            background-color: var(--primary-green);
+            color: var(--white);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .wine-details {
+            text-align: left;
+            background-color: var(--white);
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+            border: 1px solid var(--gray-light);
+        }
+
+        .wine-details h4 {
+            color: var(--primary-green);
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .wine-details ul {
+            margin-left: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background-color: var(--white);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        th {
+            background-color: var(--primary-green);
+            color: var(--white);
+            padding: 1rem;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--gray-light);
+        }
+
+        tr:hover {
+            background-color: var(--gray-light);
+        }
+
+        /* Color Palette */
+        .color-palette {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .color-item {
+            display: flex;
+            flex-direction: column;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .color-swatch {
+            height: 150px;
+            width: 100%;
+        }
+
+        .color-info {
+            padding: 1.5rem;
+            background-color: var(--gray-light);
+        }
+
+        .color-info h3 {
+            margin-bottom: 0.5rem;
+            color: var(--gray-dark);
+        }
+
+        .color-info p {
+            font-size: 0.9rem;
+            color: var(--gray-text);
+        }
+
+        /* Logo Section */
+        .logo-display {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .logo-card {
+            background-color: var(--gray-light);
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .logo-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(34, 139, 34, 0.2);
+        }
+
+        .logo-card img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        /* About Section */
+        .about-intro {
+            background: linear-gradient(to right, var(--gray-light), #fafafa);
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 5px solid var(--primary-green);
+            margin: 2rem 0;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .about-item {
+            padding: 1.5rem;
+            background-color: var(--gray-light);
+            border-left: 4px solid var(--primary-green);
+            border-radius: 4px;
+            transition: transform 0.3s;
+        }
+
+        .about-item:hover {
+            transform: translateX(5px);
+        }
+
+        .about-item h3 {
+            color: var(--primary-green);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--gray-dark);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            color: var(--white);
+            opacity: 0.8;
+        }
+
+        /* Typography Section */
+        .typography-demo {
+            background-color: var(--gray-light);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .typography-demo h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .typography-demo p {
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1rem;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            .hero .tagline {
+                font-size: 1.3rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.4rem;
+            }
+
+            .image-gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .logo-display {
+                grid-template-columns: 1fr;
+            }
+
+            .color-palette {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#over">Over Duyngaard</a></li>
+            <li><a href="#kernwaarden">Kernwaarden</a></li>
+            <li><a href="#logos">Logo's</a></li>
+            <li><a href="#wijnen">Onze Wijnen</a></li>
+            <li><a href="#kleuren">Kleuren</a></li>
+            <li><a href="#typografie">Typografie</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>DUYNGAARD WIJNEN</h1>
+        <p>Nederlandse Wijngaard in Noord-Brabant</p>
+        <p class="tagline">Wijn gemaakt met vrienden</p>
+        <p class="date">Brand Style Guide 2026</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- About Section -->
+        <section id="over">
+            <h1>Over Duyngaard Wijnen</h1>
+
+            <div class="about-intro">
+                <p><strong>Duyngaard Wijnen</strong> is een kleinschalige Nederlandse wijngaard in Noord-Brabant, gelegen aan de rand van de Loonse en Drunense Duinen. Wij maken ambachtelijke witte, rode en mousserende wijnen van handgeplukte druiven op zand- en kleigrond, met respect voor natuur, mens en regio.</p>
+            </div>
+
+            <h2>Ons Verhaal</h2>
+            <p>Onze kleinschalige familiewijngaard ligt in de directe omgeving van de Loonse en Drunense Duinen in het overgansgebied van zand en klei in Noord-Brabant. Onze witte, rode en rosé wijnen worden met de hand geoogst en ontwikkeld in samenwerking met wijnmaker Stan Beurskens van wijndomain <strong>St. Martinus</strong> in Vijen, Limburg.</p>
+
+            <p>Het resultaat zijn wijnen die het karakter van zand en klei weerspiegel, én de toewijding en warmte van de mensen die eraan hebben meegewerkt. Hier maken we wijnen die een verhaal vertellen – over onze plek, onze passie en onze vriendschappen.</p>
+        </section>
+
+        <!-- Kernwaarden Section -->
+        <section id="kernwaarden">
+            <h1>Kernwaarden</h1>
+            <p>Dit zijn de waarden die ons bij alles wat we doen leiden:</p>
+
+            <div class="about-grid">
+                <div class="about-item">
+                    <h3>🌍 Ambachtelijk</h3>
+                    <p>Handgeplukt, zorgvuldig gemaakt, met aandacht voor elk detail</p>
+                </div>
+                <div class="about-item">
+                    <h3>🤝 Familie & Vriendschap</h3>
+                    <p>Wijnen gemaakt met en voor gedeelde momenten</p>
+                </div>
+                <div class="about-item">
+                    <h3>🌱 Duurzaamheid</h3>
+                    <p>Respect voor natuur, land en mens</p>
+                </div>
+                <div class="about-item">
+                    <h3>🥇 Kwaliteit</h3>
+                    <p>Samenwerking met ervaren wijnmakers voor het beste resultaat</p>
+                </div>
+                <div class="about-item">
+                    <h3>🌾 Terroir</h3>
+                    <p>Wijnen die het karakter van zand en klei laat spreken</p>
+                </div>
+                <div class="about-item">
+                    <h3>🎨 Creativiteit</h3>
+                    <p>Innovatieve blends en bijzondere illustraties die verhalen vertellen</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Logos Section -->
+        <section id="logos">
+            <h1>Logo's</h1>
+            <p>Het Duyngaard Wijnen logo is het belangrijkste element van onze visuele identiteit. Het logo is beschikbaar in drie kleurvarianten, elk met een specifiek doel.</p>
+
+            <h2>Logo - Groen (Primair)</h2>
+            <p>Dit is ons primaire logo en wordt gebruikt op de meeste toepassingen. Het groene logo geeft onze connectie met de natuur en duurzaamheid weer.</p>
+            <div class="logo-display">
+                <div class="logo-card">
+                    <img src="01. Brand/01. Logo/Duyngaard_Logo_Groen.png" alt="Duyngaard Logo Groen">
+                    <h3>Duyngaard Logo Groen</h3>
+                    <p><strong>RGB:</strong> 34, 139, 34<br><strong>HEX:</strong> #228B22</p>
+                </div>
+            </div>
+            <table>
+                <tr>
+                    <th>Eigenschap</th>
+                    <th>Specificatie</th>
+                </tr>
+                <tr>
+                    <td>Primaire kleur</td>
+                    <td>RGB: 34, 139, 34 | HEX: #228B22</td>
+                </tr>
+                <tr>
+                    <td>Minimale grootte</td>
+                    <td>100px breed (digitaal) / 2cm (print)</td>
+                </tr>
+                <tr>
+                    <td>Gebruik</td>
+                    <td>Websites, flessen, verpakking, marketing materiaal</td>
+                </tr>
+            </table>
+
+            <h2>Logo - Wit (Secundair)</h2>
+            <p>Het witte logo wordt gebruikt op donkere achtergronden waar het groene logo onvoldoende contrast heeft.</p>
+            <div class="logo-display">
+                <div class="logo-card" style="background-color: var(--primary-green);">
+                    <img src="01. Brand/01. Logo/Duyngaard_Logo_Wit.png" alt="Duyngaard Logo Wit">
+                    <h3 style="color: var(--white);">Duyngaard Logo Wit</h3>
+                </div>
+            </div>
+
+            <h2>Logo - Zwart (Voor print)</h2>
+            <p>Het zwarte logo wordt gebruikt voor toepassingen waar kleur niet beschikbaar is.</p>
+            <div class="logo-display">
+                <div class="logo-card">
+                    <img src="01. Brand/01. Logo/Duyngaard_Logo_Zwart.png" alt="Duyngaard Logo Zwart">
+                    <h3>Duyngaard Logo Zwart</h3>
+                </div>
+            </div>
+
+            <h2>Icon - Duyngaard</h2>
+            <p>Een vereenvoudigde versie van het logo, geschikt voor kleine toepassingen.</p>
+            <div class="logo-display">
+                <div class="logo-card">
+                    <img src="01. Brand/01. Logo/Duyngaard Icon_Green.png" alt="Duyngaard Icon Green" style="max-width: 150px;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Wines Section -->
+        <section id="wijnen">
+            <h1>Onze Wijnen</h1>
+            <p>Onze collectie wijnen tells verhalen van ons landschap, onze passie en de vriendschappen die hier ontstaan. Elk label bevat een handgemaakte illustratie die uniek is voor die wijn.</p>
+
+            <h2>Stuifzand – Witte Wijn</h2>
+            <div class="image-gallery">
+                <div class="image-item">
+                    <img src="01. Brand/02. Illustrations/Stuifzand.png" alt="Stuifzand Witte Wijn">
+                    <h3>Stuifzand</h3>
+                    <span class="wine-type">Witte Wijn</span>
+                    <div class="wine-details">
+                        <p><strong>Over deze wijn:</strong></p>
+                        <p>Onze ambachtelijke witte wijn is samengesteld uit de druivenrassen <strong>Johanniter en Solaris</strong>. De wijn heeft levendige zuren en aroma's van appel en citrus. De stijl doet denken aan een frisse Riesling.</p>
+
+                        <h4>Past goed bij:</h4>
+                        <ul>
+                            <li>Gegrilde of gestoomde vis</li>
+                            <li>Salades</li>
+                            <li>Schaal- en schelpdieren</li>
+                            <li>Een zomerse borrelplank</li>
+                        </ul>
+
+                        <h4>Wanneer drink je deze wijn?</h4>
+                        <p>Stuifzand komt het best tot zijn recht als aperitief of bij lichte maaltijden in het voorjaar en de zomer, maar is ook het hele jaar door goed inzetbaar.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Ochtendgloed – Rosé Wijn</h2>
+            <div class="image-gallery">
+                <div class="image-item">
+                    <img src="01. Brand/02. Illustrations/Ochtendgloed.png" alt="Ochtendgloed Rosé Wijn">
+                    <h3>Ochtendgloed</h3>
+                    <span class="wine-type">Rosé Wijn</span>
+                    <div class="wine-details">
+                        <p><strong>Over deze wijn:</strong></p>
+                        <p>De ochtendmist in combinatie met de opkomende zon laat in de duinen vaak een bijzondere roze ochtendgloed zien. Deze kleur herkennen we in onze smaakvolle Nederlandse rosé welke bestaat uit de druivenrassen <strong>Reberger, Muscat Bleu en Johanniter</strong>.</p>
+
+                        <h4>Past goed bij:</h4>
+                        <ul>
+                            <li>Apertiefmomenten</li>
+                            <li>Schaal- en schelpdieren</li>
+                            <li>Zomerse gerechten zoals salade met burrata en tomaat</li>
+                            <li>Lichte vleesgerechten zoals kip van de grill</li>
+                        </ul>
+
+                        <h4>Wanneer drink je deze wijn?</h4>
+                        <p>De rosé wijn komt het beste tot zijn recht op warme dagen of zwoele avonden. Denk aan een lunch in de tuin, een picknick of een barbecue met vrienden. Maar licht gekoeld is deze rosé ook een uitstekende start van een avond.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Verstoven Eik – Rode Wijn</h2>
+            <div class="image-gallery">
+                <div class="image-item">
+                    <img src="01. Brand/02. Illustrations/Oak with dune.png" alt="Verstoven Eik Rode Wijn">
+                    <h3>Verstoven Eik</h3>
+                    <span class="wine-type">Rode Wijn</span>
+                    <div class="wine-details">
+                        <p><strong>Over deze wijn:</strong></p>
+                        <p><strong>Verstoven Eik</strong> is een Nederlandse rode wijn gemaakt van 100% <strong>Cabernet Cortis</strong>. De wijn is krachtig en kruidig, met tonen van donker fruit en stevige tannines en is geript op eikenhout vaten. Deze wijn is bij uitstek geschikt om wat langer in de wijnkelder te laten liggen.</p>
+
+                        <p>De naam <em>"Verstoven Eik"</em> ontlenen wij aan de karakteristieke eiken bomen in de Loonse en Drunense duinen.</p>
+
+                        <h4>Past goed bij:</h4>
+                        <ul>
+                            <li>Wildgerechten</li>
+                            <li>Stoofschotels</li>
+                            <li>Lamsvlees</li>
+                            <li>Gegrild rood vlees</li>
+                            <li>Harde en grijpte kazen</li>
+                        </ul>
+
+                        <h4>Wanneer drink je deze wijn?</h4>
+                        <p>Verstoven Eik is geschikt voor herfst- en wintergerechten, en kan in de zomer licht gekoeld worden geschonken. De wijn kan prima weggelegd worden in de kelder voor verdere rijping.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-gallery">
+                <div class="image-item">
+                    <img src="01. Brand/02. Illustrations/Butterfly.png" alt="Butterfly">
+                    <h3>Butterfly</h3>
+                </div>
+                <div class="image-item">
+                    <img src="01. Brand/02. Illustrations/Family.png" alt="Family">
+                    <h3>Family</h3>
+                </div>
+                <div class="image-item">
+                    <img src="01. Brand/02. Illustrations/JPJML.png" alt="JPJML">
+                    <h3>JPJML</h3>
+                </div>
+                <div class="image-item">
+                    <img src="01. Brand/02. Illustrations/Jan en Mathis.png" alt="Jan en Mathis">
+                    <h3>Jan en Mathis</h3>
+                </div>
+                <div class="image-item">
+                    <img src="01. Brand/02. Illustrations/Jules.png" alt="Jules">
+                    <h3>Jules</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Colors Section -->
+        <section id="kleuren">
+            <h1>Kleurenpalet</h1>
+
+            <h2>Primaire Kleuren</h2>
+            <div class="color-palette">
+                <div class="color-item">
+                    <div class="color-swatch" style="background-color: #228B22;"></div>
+                    <div class="color-info">
+                        <h3>Duyngaard Groen</h3>
+                        <p><strong>RGB:</strong> 34, 139, 34<br><strong>HEX:</strong> #228B22<br><strong>Gebruik:</strong> Logo en brand kleur, natuur connectie</p>
+                    </div>
+                </div>
+
+                <div class="color-item">
+                    <div class="color-swatch" style="background-color: #FFFFFF; border: 1px solid #ddd;"></div>
+                    <div class="color-info">
+                        <h3>Wit</h3>
+                        <p><strong>RGB:</strong> 255, 255, 255<br><strong>HEX:</strong> #FFFFFF<br><strong>Gebruik:</strong> Achtergronden en contrast</p>
+                    </div>
+                </div>
+
+                <div class="color-item">
+                    <div class="color-swatch" style="background-color: #000000;"></div>
+                    <div class="color-info">
+                        <h3>Zwart</h3>
+                        <p><strong>RGB:</strong> 0, 0, 0<br><strong>HEX:</strong> #000000<br><strong>Gebruik:</strong> Tekst en accenten</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Ondersteunende Kleuren – Natuurmotieven</h2>
+            <div class="color-palette">
+                <div class="color-item">
+                    <div class="color-swatch" style="background-color: #D4A574;"></div>
+                    <div class="color-info">
+                        <h3>Zand</h3>
+                        <p><strong>RGB:</strong> 212, 165, 116<br><strong>HEX:</strong> #D4A574<br><strong>Gebruik:</strong> Duin en terroir accenten</p>
+                    </div>
+                </div>
+
+                <div class="color-item">
+                    <div class="color-swatch" style="background-color: #A0826D;"></div>
+                    <div class="color-info">
+                        <h3>Klei</h3>
+                        <p><strong>RGB:</strong> 160, 130, 109<br><strong>HEX:</strong> #A0826D<br><strong>Gebruik:</strong> Aarde tonen</p>
+                    </div>
+                </div>
+
+                <div class="color-item">
+                    <div class="color-swatch" style="background-color: #B8860B;"></div>
+                    <div class="color-info">
+                        <h3>Gouden Accent</h3>
+                        <p><strong>RGB:</strong> 184, 134, 11<br><strong>HEX:</strong> #B8860B<br><strong>Gebruik:</strong> Premium details</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Typography Section -->
+        <section id="typografie">
+            <h1>Typografie</h1>
+
+            <h2>Lettertypen</h2>
+            <table>
+                <tr>
+                    <th>Gebruik</th>
+                    <th>Lettertype</th>
+                    <th>Grootte</th>
+                </tr>
+                <tr>
+                    <td>Titels/Headings</td>
+                    <td>Arial Bold</td>
+                    <td>24pt - 48pt</td>
+                </tr>
+                <tr>
+                    <td>Body Tekst</td>
+                    <td>Arial Regular</td>
+                    <td>11pt - 12pt</td>
+                </tr>
+                <tr>
+                    <td>Accenten</td>
+                    <td>Arial Bold</td>
+                    <td>14pt - 18pt</td>
+                </tr>
+            </table>
+
+            <h2>Stijlgids</h2>
+            <ul>
+                <li>Gebruik altijd een duidelijke typografische hiërarchie</li>
+                <li>Zorg voor voldoende witruimte rond tekst</li>
+                <li>Gebruik bold voor nadruk, niet voor hele alinea's</li>
+                <li>Houd marges van minimum 0,5 inch rondom tekst</li>
+                <li>Zorg voor voldoende contrast tussen tekst en achtergrond</li>
+                <li>Iteralia gebruiken voor nadruk op kernboodschappen</li>
+            </ul>
+
+            <div class="typography-demo">
+                <h3>H1 - Heading 1 (28pt, Bold, Groen)</h3>
+                <h3 style="font-size: 1.4rem; color: var(--primary-green);">H2 - Heading 2 (18pt, Bold, Groen)</h3>
+                <h3 style="font-size: 1.1rem; color: var(--primary-green);">H3 - Heading 3 (14pt, Bold, Donker Groen)</h3>
+                <p>Body text (11pt, Regular) - Dit is een voorbeeld van body tekst. Het wordt gebruikt voor alinea's en reguliere inhoud op pagina's. Zorg voor een line-height van 1.6-1.8 voor optimale leesbaarheid.</p>
+                <p><em>Italics worden gebruikt voor nadruk op speciale momenten en belangrijke kernboodschappen.</em></p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section>
+            <h1>Over Dit Style Guide</h1>
+            <p>Dit Brand Style Guide helpt iedereen consistent met de Duyngaard Wijnen identiteit om te gaan. Of je nu marketing materiaal, website content of verpakking maakt – dit guide geeft je alle richtlijnen die je nodig hebt.</p>
+
+            <p><strong>Voor vragen of opmerkingen:</strong> Neem contact op met het Duyngaard Wijnen team.</p>
+
+            <table>
+                <tr>
+                    <th>Kanaal</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>Website</td>
+                    <td>www.duyngaardwijnen.nl</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>info@duyngaardwijnen.nl</td>
+                </tr>
+                <tr>
+                    <td>Locatie</td>
+                    <td>Loonse en Drunense Duinen, Noord-Brabant</td>
+                </tr>
+            </table>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Duyngaard Wijnen. Alle rechten voorbehouden.</p>
+        <p><em>Wijn gemaakt met vrienden</em></p>
+    </footer>
+</body>
+</html>
