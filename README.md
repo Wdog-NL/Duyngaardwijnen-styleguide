@@ -169,8 +169,8 @@ Verstoven Eik is geschikt voor herfst- en wintergerechten, en kan in de zomer li
 ## 🌐 Links & Resources
 
 - **Website:** [www.duyngaardwijnen.nl](https://www.duyngaardwijnen.nl)
-- **Online Styleguide:** [https://wdog-nl.github.io/Duyngaard-wijnen-styleguide/](https://wdog-nl.github.io/Duyngaard-wijnen-styleguide/)
-- **GitHub Repository:** [https://github.com/Wdog-NL/Duyngaard-wijnen-styleguide](https://github.com/Wdog-NL/Duyngaard-wijnen-styleguide)
+- **Online Styleguide:** https://wdog-nl.github.io/Duyngaardwijnen-styleguide/
+- **GitHub Repository:** https://github.com/Wdog-NL/Duyngaardwijnen-styleguide
 
 ---
 
