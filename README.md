@@ -32,7 +32,7 @@ Het resultaat zijn wijnen die het karakter van zand en klei weerspiegel, én de 
 ## 🎨 Logo's
 
 ### Logo - Groen (Primair)
-- **Kleur:** RGB: 34, 139, 34 | HEX: #228B22
+- **Kleur:** RGB: 35, 102, 59 | HEX: #23663b
 - **Minimale grootte:** 100px breed (digitaal) / 2cm (print)
 - **Gebruik:** Websites, flessen, verpakking, marketing materiaal
 - **Toepassing:** Standaard, gebruik dit het meest
@@ -111,7 +111,7 @@ Verstoven Eik is geschikt voor herfst- en wintergerechten, en kan in de zomer li
 
 | Kleur | RGB | HEX | Gebruik |
 |-------|-----|-----|---------|
-| **Duyngaard Groen** | 34, 139, 34 | #228B22 | Logo en brand kleur, natuur connectie |
+| **Duyngaard Groen** | 35, 102, 59 | #23663b | Logo en brand kleur, natuur connectie |
 | **Wit** | 255, 255, 255 | #FFFFFF | Achtergronden en contrast |
 | **Zwart** | 0, 0, 0 | #000000 | Tekst en accenten |
 
